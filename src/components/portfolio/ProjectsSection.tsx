@@ -3,6 +3,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { projects } from "@/data/portfolio-data";
+import projectEcommerce from "@/assets/project-ecommerce.jpg";
+import projectStandardization from "@/assets/project-standardization.jpg";
+import projectTraining from "@/assets/project-training.jpg";
+
+const projectImages: Record<string, string> = {
+  "project-ecommerce": projectEcommerce,
+  "project-standardization": projectStandardization,
+  "project-training": projectTraining,
+};
 
 const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
   const [expanded, setExpanded] = useState(false);
@@ -10,62 +19,60 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
   return (
     <AnimatedSection delay={0.15 * index}>
       <div className="bg-card rounded-xl border border-border overflow-hidden shadow-sm">
-        <div className="p-6 md:p-8">
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-            <div>
-              <h3 className="font-display text-xl md:text-2xl font-bold text-foreground">
-                {project.title}
-              </h3>
-              <p className="text-sm text-accent font-medium mt-1">{project.subtitle}</p>
-            </div>
-            <div className="flex flex-wrap gap-3">
-              {project.metrics.map((m) => (
-                <div key={m.label} className="text-center px-4 py-2 rounded-lg bg-secondary">
-                  <div className="font-display text-lg font-bold gold-text">{m.value}</div>
-                  <div className="text-xs text-muted-foreground">{m.label}</div>
-                </div>
+        <div className="md:flex">
+          <div className="md:w-2/5 h-48 md:h-auto relative overflow-hidden">
+            <img
+              src={projectImages[project.image]}
+              alt={project.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-primary/20" />
+          </div>
+          <div className="md:w-3/5 p-6 md:p-8">
+            <h3 className="font-display text-xl md:text-2xl font-bold text-foreground">
+              {project.title}
+            </h3>
+            <p className="text-sm text-accent font-medium mt-1">{project.subtitle}</p>
+
+            <p className="text-muted-foreground mt-4 text-sm leading-relaxed">{project.description}</p>
+
+            <div className="flex flex-wrap gap-2 mt-4">
+              {project.skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="text-xs font-medium px-3 py-1 rounded-full bg-secondary text-secondary-foreground"
+                >
+                  {skill}
+                </span>
               ))}
             </div>
+
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent hover:brightness-110 transition-all"
+            >
+              {expanded ? "Show less" : "View details"}
+              <motion.span animate={{ rotate: expanded ? 180 : 0 }} transition={{ duration: 0.3 }}>
+                <ChevronDown size={16} />
+              </motion.span>
+            </button>
+
+            <AnimatePresence>
+              {expanded && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                  className="overflow-hidden"
+                >
+                  <p className="mt-4 pt-4 border-t border-border text-muted-foreground text-sm leading-relaxed">
+                    {project.details}
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
-
-          <p className="text-muted-foreground mb-4">{project.description}</p>
-
-          <div className="flex flex-wrap gap-2 mb-4">
-            {project.skills.map((skill) => (
-              <span
-                key={skill}
-                className="text-xs font-medium px-3 py-1 rounded-full bg-secondary text-secondary-foreground"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-
-          <button
-            onClick={() => setExpanded(!expanded)}
-            className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:brightness-110 transition-all"
-          >
-            {expanded ? "Show less" : "View details"}
-            <motion.span animate={{ rotate: expanded ? 180 : 0 }} transition={{ duration: 0.3 }}>
-              <ChevronDown size={16} />
-            </motion.span>
-          </button>
-
-          <AnimatePresence>
-            {expanded && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                className="overflow-hidden"
-              >
-                <p className="mt-4 pt-4 border-t border-border text-muted-foreground text-sm leading-relaxed">
-                  {project.details}
-                </p>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </div>
       </div>
     </AnimatedSection>
@@ -75,7 +82,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
 const ProjectsSection = () => {
   return (
     <section id="projects" className="section-padding bg-background">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
             Selected Projects
