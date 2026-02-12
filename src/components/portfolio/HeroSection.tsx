@@ -57,8 +57,7 @@ const HeroSection = () => {
         >
           <a
             href={personalInfo.cvUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            download="CV_Pere_Guma.pdf"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-display font-semibold text-sm tracking-wide bg-accent text-accent-foreground hover:brightness-110 transition-all shadow-lg shadow-accent/20"
           >
             <Download size={18} />

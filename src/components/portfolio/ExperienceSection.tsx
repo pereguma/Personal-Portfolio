@@ -49,7 +49,7 @@ const ExperienceSection = () => {
                                 {sub.highlights.map((h) => (
                                   <li key={h} className="text-sm text-muted-foreground flex items-start gap-2">
                                     <span className="text-accent mt-1.5 flex-shrink-0">•</span>
-                                    <span>{h}</span>
+                                    <span className="text-justify">{h}</span>
                                   </li>
                                 ))}
                               </ul>
@@ -75,7 +75,7 @@ const ExperienceSection = () => {
                             {item.highlights.map((h) => (
                               <li key={h} className="text-sm text-muted-foreground flex items-start gap-2">
                                 <span className="text-accent mt-1.5 flex-shrink-0">•</span>
-                                <span>{h}</span>
+                                <span className="text-justify">{h}</span>
                               </li>
                             ))}
                           </ul>
