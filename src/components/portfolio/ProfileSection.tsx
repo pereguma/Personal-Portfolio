@@ -1,9 +1,10 @@
 import AnimatedSection from "./AnimatedSection";
 import { profileText } from "@/data/portfolio-data";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const ProfileSection = () => {
   return (
-    <section id="profile" className="section-padding bg-background">
+    <section id="profile" className="section-padding section-alt">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
@@ -11,15 +12,24 @@ const ProfileSection = () => {
           </h2>
         </AnimatedSection>
 
-        <div className="mt-10 space-y-6">
-          {profileText.paragraphs.map((paragraph, i) => (
-            <AnimatedSection key={i} delay={0.15 * (i + 1)}>
-              <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
-                {paragraph}
-              </p>
-            </AnimatedSection>
-          ))}
-        </div>
+        <AnimatedSection delay={0.2}>
+          <div className="mt-10 flex flex-col md:flex-row gap-8 items-start">
+            <div className="flex-1 space-y-6">
+              {profileText.paragraphs.map((paragraph, i) => (
+                <p key={i} className="text-base md:text-lg leading-relaxed text-muted-foreground">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            <div className="flex-shrink-0 hidden md:block">
+              <img
+                src={profilePhoto}
+                alt="Pere Gumà"
+                className="w-44 h-56 rounded-2xl object-cover border-2 border-border shadow-md"
+              />
+            </div>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );

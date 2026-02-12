@@ -9,7 +9,7 @@ const CompetenciesSection = () => {
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
-            Core Competencies
+            Competencias Clave
           </h2>
         </AnimatedSection>
 
