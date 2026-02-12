@@ -35,8 +35,7 @@ const ContactSection = () => {
             </a>
             <a
               href={personalInfo.cvUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              download="CV_Pere_Guma.pdf"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-display font-semibold text-sm border border-border text-foreground hover:bg-secondary transition-all"
             >
               <Download size={18} />

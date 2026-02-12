@@ -16,7 +16,7 @@ const ProfileSection = () => {
           <div className="mt-10 flex flex-col md:flex-row gap-8 items-start">
             <div className="flex-1 space-y-6">
               {profileText.paragraphs.map((paragraph, i) => (
-                <p key={i} className="text-base md:text-lg leading-relaxed text-muted-foreground">
+                <p key={i} className="text-base md:text-lg leading-relaxed text-muted-foreground text-justify">
                   {paragraph}
                 </p>
               ))}

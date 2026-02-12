@@ -7,7 +7,7 @@ export const personalInfo = {
   title: "Consultoría en IA y Business Analytics | Analítica Aplicada al Marketing",
   subtitle: "Transformando datos en decisiones estratégicas mediante analítica, automatización e implantación de soluciones de IA en entornos reales.",
   email: "pere.guma97@gmail.com",
-  linkedin: "https://www.linkedin.com/in/peregumaesteve",
+  linkedin: "https://www.linkedin.com/in/peregum%C3%A0esteve",
   cvUrl: "/cv-pere-guma.pdf",
 };
 
@@ -63,14 +63,16 @@ export const competencyCategories = [
 
 export const projects = [
   {
-    title: "Jocs de la Terra",
-    subtitle: "E-commerce propio",
+    title: "Jocs de la Terra – Proyecto E-commerce Cultural",
+    subtitle: "Proyecto propio",
     description:
-      "Lideré la estrategia digital y el desarrollo e-commerce para una marca de juegos tradicionales, combinando analítica de mercado con insights de cliente para impulsar las ventas online.",
-    skills: ["Estrategia E-commerce", "Marketing Digital", "GA4", "SEO"],
+      "Proyecto propio de e-commerce orientado a la divulgación de la cultura catalana a través de juegos de mesa temáticos. Desarrollo de propuesta de valor, enfoque SEO/SEM, analítica de funnels y exploración de automatizaciones.",
+    skills: ["Estrategia E-commerce", "Marketing Digital", "GA4", "SEO/SEM"],
     image: "project-ecommerce",
     details:
       "Desarrollo y ejecución de una estrategia de transformación digital integral: rediseño web, optimización SEO, campañas de publicidad pagada e implementación de analítica avanzada. Uso de GA4 e insights basados en IA para optimizar el customer journey y aumentar las tasas de conversión.",
+    link: "https://jocsdelaterra.cat",
+    isPrototype: true,
   },
   {
     title: "Sistema de Estandarización de Procesos",
@@ -81,6 +83,8 @@ export const projects = [
     image: "project-standardization",
     details:
       "Creación de la arquitectura completa de procesos organizacionales desde cero, documentando cada proceso a dos niveles: una vista macro visual para referencia rápida y procedimientos operativos estándar detallados a nivel textual para cada proceso individual. Este marco SKELETON se convirtió en la columna vertebral para auditorías de calidad, formación y mejora continua en toda la organización.",
+    link: undefined,
+    isPrototype: false,
   },
   {
     title: "Sistema Formativo y de Competencias",
@@ -91,6 +95,8 @@ export const projects = [
     image: "project-training",
     details:
       "Diseño y despliegue del marco completo del sistema formativo: no el software, sino la implementación organizacional. Esto incluyó la definición de matrices de competencias por puesto, niveles de cualificación por empleado, identificación de gaps formativos y creación de planes de desarrollo estructurados. El sistema permitió un desarrollo de la plantilla basado en datos, alineado con los requisitos de calidad de P&G.",
+    link: undefined,
+    isPrototype: false,
   },
 ];
 
