@@ -51,7 +51,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
               onClick={() => setExpanded(!expanded)}
               className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-accent hover:brightness-110 transition-all"
             >
-              {expanded ? "Show less" : "View details"}
+              {expanded ? "Ver menos" : "Ver detalles"}
               <motion.span animate={{ rotate: expanded ? 180 : 0 }} transition={{ duration: 0.3 }}>
                 <ChevronDown size={16} />
               </motion.span>
@@ -85,7 +85,7 @@ const ProjectsSection = () => {
       <div className="max-w-5xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
-            Selected Projects
+            Proyectos Seleccionados
           </h2>
         </AnimatedSection>
 

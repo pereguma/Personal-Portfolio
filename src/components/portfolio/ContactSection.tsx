@@ -8,10 +8,10 @@ const ContactSection = () => {
       <div className="max-w-3xl mx-auto text-center">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Let's Connect
+            Conectemos
           </h2>
           <p className="text-muted-foreground mb-10">
-            Interested in collaboration or have a project in mind? I'd love to hear from you.
+            ¿Interesado en colaborar o tienes un proyecto en mente? Me encantaría saber de ti.
           </p>
         </AnimatedSection>
 
@@ -40,14 +40,14 @@ const ContactSection = () => {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-display font-semibold text-sm border border-border text-foreground hover:bg-secondary transition-all"
             >
               <Download size={18} />
-              Download CV
+              Descargar CV
             </a>
           </div>
         </AnimatedSection>
 
         <AnimatedSection delay={0.4}>
           <p className="mt-16 text-sm text-muted-foreground">
-            © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
+            © {new Date().getFullYear()} {personalInfo.name}. Todos los derechos reservados.
           </p>
         </AnimatedSection>
       </div>

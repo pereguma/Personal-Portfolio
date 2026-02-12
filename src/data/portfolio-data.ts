@@ -1,56 +1,62 @@
 // =====================================================
-// PORTFOLIO DATA - Edit this file to update your content
+// PORTFOLIO DATA - Edita este archivo para actualizar contenido
 // =====================================================
 
 export const personalInfo = {
   name: "Pere Gumà",
-  title: "AI & Business Analytics | Digital Transformation | Data-Driven Strategy",
-  subtitle: "Turning complex data into strategic business value through AI-powered analytics and digital transformation.",
-  email: "pere.guma@email.com",
-  linkedin: "https://www.linkedin.com/in/pereguma",
+  title: "Consultoría en IA y Business Analytics | Analítica Aplicada al Marketing",
+  subtitle: "Transformando datos en decisiones estratégicas mediante analítica, automatización e implantación de soluciones de IA en entornos reales.",
+  email: "pere.guma97@gmail.com",
+  linkedin: "https://www.linkedin.com/in/peregumaesteve",
   cvUrl: "/cv-pere-guma.pdf",
 };
 
+export const aboutText = {
+  heading: "Quién Soy",
+  paragraph:
+    "Soy una persona orientada a la mejora continua, tanto en el ámbito profesional como personal. Practico deporte de forma habitual (running, gimnasio, fútbol, escalada), lo que refuerza mi disciplina, constancia y mentalidad de superación. Me motiva salir de la zona de confort, aprender constantemente y afrontar retos complejos con enfoque analítico y actitud proactiva. Busco siempre aportar valor real y evolucionar hacia mi mejor versión en cada proyecto.",
+};
+
 export const profileText = {
-  heading: "Professional Profile",
+  heading: "Perfil Profesional",
   paragraphs: [
-    "Results-driven professional with a strong foundation in Business Analytics, AI-driven transformation, and strategic consulting. Experienced in leveraging data to optimize processes, drive revenue growth, and enable smarter decision-making across industries.",
-    "Passionate about bridging the gap between advanced technology and real business outcomes. My approach combines analytical rigor with strategic thinking to deliver measurable impact in complex business environments.",
+    "Profesional híbrido negocio–tecnología con formación en Ingeniería de Organización Industrial y ADE, y especialización en analítica de datos y marketing digital. Experiencia en definición y seguimiento de KPIs, mejora de procesos y reporting para la toma de decisiones.",
+    "Orientado a convertir datos en insights accionables mediante analítica, automatización y herramientas BI, con enfoque práctico en entornos de negocio y consultoría.",
   ],
 };
 
 export const competencyCategories = [
   {
-    title: "Business Strategy & Operational Excellence",
+    title: "Estrategia de Negocio y Excelencia Operativa",
     skills: [
-      "KPI Framework Design & Tracking",
-      "ROI & Business Case Development",
-      "LTV / CAC Modeling",
-      "Lean Process Optimization",
-      "Cross-functional Stakeholder Management",
-      "Structured Problem Solving (8D Methodology)",
+      "Diseño y seguimiento de KPIs",
+      "Elaboración de Business Case y ROI",
+      "Modelado LTV / CAC",
+      "Optimización de procesos Lean",
+      "Gestión de stakeholders multifuncional",
+      "Resolución estructurada de problemas (8D)",
     ],
   },
   {
-    title: "Data Analytics & Business Intelligence",
+    title: "Analítica de Datos y Business Intelligence",
     skills: [
-      "Executive Dashboard Design (Power BI / Looker)",
-      "Google Analytics 4 (GA4) Mastery",
-      "Funnel & Cohort Analysis",
-      "Advanced Data Modeling (Excel / Sheets)",
-      "Basic SQL Querying",
-      "Data-Driven Executive Reporting",
+      "Diseño de dashboards ejecutivos (Power BI / Looker)",
+      "Google Analytics 4 (GA4)",
+      "Análisis de embudo y cohortes",
+      "Modelado avanzado de datos (Excel / Sheets)",
+      "Consultas SQL básicas",
+      "Reporting ejecutivo basado en datos",
     ],
   },
   {
-    title: "Applied AI & Digital Automation",
+    title: "IA Aplicada y Automatización Digital",
     skills: [
-      "Applied LLM Integration (GPT / Claude / Gemini)",
-      "No-Code Automation (Make / Zapier / n8n)",
-      "AI-Powered Workflow Optimization",
-      "AI-Assisted Content & Data Workflows",
-      "Product Digitalization Strategy",
-      "AI Use-Case Identification & Implementation",
+      "Integración de LLMs (GPT / Claude / Gemini)",
+      "Automatización no-code (Make / Zapier / n8n)",
+      "Optimización de flujos con IA",
+      "Workflows de contenido y datos con IA",
+      "Estrategia de digitalización de producto",
+      "Identificación e implantación de casos de uso IA",
     ],
   },
 ];
@@ -58,160 +64,128 @@ export const competencyCategories = [
 export const projects = [
   {
     title: "Jocs de la Terra",
-    subtitle: "E-commerce Venture",
+    subtitle: "E-commerce propio",
     description:
-      "Led the digital strategy and e-commerce development for a traditional games brand, combining market analytics with AI-driven customer insights to drive online sales growth.",
-    skills: ["E-commerce Strategy", "Digital Marketing", "GA4 Analytics", "SEO Optimization"],
+      "Lideré la estrategia digital y el desarrollo e-commerce para una marca de juegos tradicionales, combinando analítica de mercado con insights de cliente para impulsar las ventas online.",
+    skills: ["Estrategia E-commerce", "Marketing Digital", "GA4", "SEO"],
     image: "project-ecommerce",
     details:
-      "Developed and executed a comprehensive digital transformation strategy, including website redesign, SEO optimization, paid advertising campaigns, and advanced analytics implementation. Leveraged GA4 and AI-driven insights to optimize the customer journey and increase conversion rates significantly.",
+      "Desarrollo y ejecución de una estrategia de transformación digital integral: rediseño web, optimización SEO, campañas de publicidad pagada e implementación de analítica avanzada. Uso de GA4 e insights basados en IA para optimizar el customer journey y aumentar las tasas de conversión.",
   },
   {
-    title: "Process Standardization System",
+    title: "Sistema de Estandarización de Procesos",
     subtitle: "BCNonwovens",
     description:
-      "Designed and implemented a complete process standardization framework (\"SKELETON\") mapping all company processes, with both macro-level visual documentation and detailed procedural descriptions for every operational workflow.",
-    skills: ["Process Mapping", "Standardization", "Lean Methodology", "Quality Systems"],
+      "Diseñé e implementé un marco completo de estandarización de procesos (\"SKELETON\") mapeando todos los procesos de la empresa, con documentación visual a nivel macro y descripciones detalladas para cada flujo operativo.",
+    skills: ["Mapeo de procesos", "Estandarización", "Metodología Lean", "Sistemas de calidad"],
     image: "project-standardization",
     details:
-      "Created the full organizational process architecture from scratch, documenting every process at two levels: a visual macro view for quick reference and understanding, and detailed text-level standard operating procedures for each individual process. This SKELETON framework became the backbone for quality audits, training, and continuous improvement across the organization.",
+      "Creación de la arquitectura completa de procesos organizacionales desde cero, documentando cada proceso a dos niveles: una vista macro visual para referencia rápida y procedimientos operativos estándar detallados a nivel textual para cada proceso individual. Este marco SKELETON se convirtió en la columna vertebral para auditorías de calidad, formación y mejora continua en toda la organización.",
   },
   {
-    title: "Training & Competency System",
+    title: "Sistema Formativo y de Competencias",
     subtitle: "BCNonwovens",
     description:
-      "Implemented a comprehensive training management system, mapping each job position's required competencies and tracking individual qualification levels across the organization.",
-    skills: ["Training Systems", "Competency Mapping", "HR Processes", "Qualification Tracking"],
+      "Implementé un sistema integral de gestión formativa, mapeando las competencias requeridas de cada puesto de trabajo y el nivel de cualificación de cada persona en la organización.",
+    skills: ["Sistemas formativos", "Mapeo de competencias", "Procesos RRHH", "Seguimiento de cualificaciones"],
     image: "project-training",
     details:
-      "Designed and deployed the full training system framework—not the software, but the organizational implementation itself. This included defining competency matrices for each role, establishing qualification levels per employee, identifying training gaps, and creating structured development plans. The system enabled data-driven workforce development aligned with P&G quality requirements.",
+      "Diseño y despliegue del marco completo del sistema formativo: no el software, sino la implementación organizacional. Esto incluyó la definición de matrices de competencias por puesto, niveles de cualificación por empleado, identificación de gaps formativos y creación de planes de desarrollo estructurados. El sistema permitió un desarrollo de la plantilla basado en datos, alineado con los requisitos de calidad de P&G.",
   },
 ];
 
 export const experience = [
   {
     role: "Customer Quality Engineer",
-    company: "DOGA",
+    company: "DOGA SA",
     location: "Abrera, Cataluña, España",
-    period: "ago. 2023 – jul. 2024",
+    period: "2023 – 2024",
     duration: "1 año",
     description: null,
-    highlights: ["Ingeniería de calidad de cliente", "Gestión de decisiones", "Relación con proveedores"],
+    highlights: [
+      "Gestión integral de reclamaciones internacionales: análisis de causa raíz (8D), planes de acción y seguimiento de KPIs",
+      "Coordinación con equipos multifuncionales (I+D, Producción, Comercial)",
+      "Uso de SAP y reporting para trazabilidad y control de indicadores",
+      "Mejora de fiabilidad mediante validaciones y controles preventivos",
+    ],
+    isGrouped: false,
   },
   {
-    role: "Management Systems Engineer",
+    role: "BCNonwovens",
     company: "BCNonwovens",
     location: "Sant Quintí de Mediona, Cataluña, España",
-    period: "abr. 2023 – ago. 2023",
-    duration: "5 meses",
-    description: "Coordinación de proyectos de sistemas de gestión y mejora continua.",
-    highlights: ["Coordinación de proyectos", "Sistemas de gestión", "Mejora continua"],
-  },
-  {
-    role: "Ingeniero de Sistemas de Calidad",
-    company: "BCNonwovens",
-    location: "Sant Quintí de Mediona, Cataluña, España",
-    period: "sept. 2021 – may. 2023",
-    duration: "1 año 9 meses",
-    description:
-      "Control y seguimiento de la estandarización de procesos. Realización y seguimiento de proyectos internos aplicando metodología Lean (A3, optimización por procesos). Auditorías internas, de cliente y contratadas según los \"20 Critical Components\" de P&G.",
-    highlights: ["Estandarización de procesos", "Metodología Lean", "Auditorías P&G"],
-  },
-  {
-    role: "Soporte de Proyectos",
-    company: "BCNonwovens",
-    location: "Sant Quintí de Mediona, Cataluña, España",
-    period: "ene. 2019 – sept. 2021",
-    duration: "2 años 9 meses",
-    description:
-      "Soporte en proyectos siguiendo los requisitos de calidad de P&G: estandarización y sistema formativo.",
-    highlights: ["Soporte técnico", "Estandarización", "Sistema formativo"],
-  },
-  {
-    role: "Administrativo de Finanzas",
-    company: "BCNonwovens",
-    location: "Sant Quintí de Mediona, Cataluña, España",
-    period: "jul. 2019 – ago. 2019",
-    duration: "2 meses",
-    description: "Gestión de facturas, pedidos y albaranes a través de Excel.",
-    highlights: ["Gestión financiera", "Excel"],
-  },
-  {
-    role: "Ingeniero de Soporte I+D",
-    company: "BCNonwovens",
-    location: "Sant Quintí de Mediona, Cataluña, España",
-    period: "abr. 2018 – ene. 2019",
-    duration: "10 meses",
-    description: "Soporte técnico al departamento de I+D. Análisis de laboratorio y organización del departamento.",
-    highlights: ["I+D", "Análisis de laboratorio"],
+    period: "2019 – 2023",
+    duration: "5 años",
+    description: null,
+    highlights: [],
+    isGrouped: true,
+    subRoles: [
+      {
+        role: "Quality Management Systems Engineer",
+        period: "2021 – 2023",
+        highlights: [
+          "Diseño y mantenimiento de sistemas de gestión de calidad",
+          "Auditorías internas, de cliente y de terceros (P&G 20 Critical Components)",
+          "Proyectos Lean (A3, estandarización, formación interna)",
+          "Implantación y seguimiento de KPIs operativos",
+        ],
+      },
+      {
+        role: "Becario I+D – Soporte Multidepartamental",
+        period: "2019 – 2021",
+        highlights: [
+          "Soporte técnico a I+D, análisis de materiales y organización del laboratorio",
+          "Apoyo a proyectos de estandarización y sistema formativo",
+        ],
+      },
+    ],
   },
 ];
 
-export const education = [
+export const academicEducation = [
   {
-    degree: "Postgrado en IA y Ciencia de Datos en la Empresa",
-    institution: "La Salle BCN",
-    year: "oct. 2025 – jun. 2026",
-    description:
-      "Formación integral en Data Science, Big Data, IA generativa y aplicaciones prácticas de negocio. Incluye Python, SQL, modelos predictivos y gestión de proyectos Data Driven.",
+    degree: "Postgrado en Gestión de la IA y Data Science en la Empresa",
+    institution: "La Salle – Barcelona",
+    year: "En proceso",
   },
   {
     degree: "Máster en Dirección de Marketing Digital",
     institution: "UPF Barcelona School of Management",
-    year: "sept. 2024 – jul. 2025",
-    description: "Programa avanzado en marketing digital, análisis de datos y estrategia digital. Nota: 9,5.",
+    year: "2024 – 2025",
   },
   {
-    degree: "IA aplicada al Marketing Digital",
-    institution: "CIFO",
-    year: "oct. 2024 – dic. 2024",
-    description:
-      "Curso especializado en IA aplicada a MarTech, automatización de procesos y herramientas de marketing con IA.",
-  },
-  {
-    degree: "Márketing a Cercadors: SEO, SEM y Analítica Web",
-    institution: "CET Penedès",
-    year: "jul. 2025",
-    description: "Formación en SEO, SEM, PPC, landing pages, testing y analítica web.",
-  },
-  {
-    degree: "Postgraduate in Project Management",
-    institution: "UPC School",
-    year: "feb. 2022 – sept. 2022",
-    description: "Project Management avanzado.",
-  },
-  {
-    degree: "Quality System Design Training",
-    institution: "P&G Training Program",
-    year: "nov. 2021",
-    description: "Formación de 40h en los \"20 Critical Components\": programa de requisitos de calidad de P&G.",
+    degree: "Postgrado en Gestión de Proyectos",
+    institution: "UPC School / Tech Talent Center",
+    year: "2022",
   },
   {
     degree: "Grado en Administración y Dirección de Empresas",
     institution: "Universitat Oberta de Catalunya",
-    year: "feb. 2018 – jul. 2021",
-    description: "Formación en finanzas, operaciones, marketing y gestión estratégica.",
+    year: "2017 – 2021",
   },
   {
     degree: "Grado en Ingeniería de Organización Industrial",
     institution: "UPC Manresa – EPSEM",
-    year: "sept. 2016 – jul. 2020",
-    description: "Ingeniería con enfoque en organización industrial, CTIM y capacidad analítica.",
+    year: "2015 – 2019",
   },
 ];
 
-export const certifications = [
-  "Google Analytics 4 (GA4)",
-  "SEO & SEM Specialist",
-  "AI for Business – IBM",
-  "Agile Project Management",
+export const complementaryTraining = [
+  { name: "AWS Cloud Practitioner Essentials", year: "2026" },
+  { name: "SEO, SEM y Analítica Web", year: "2025" },
+  { name: "IA aplicada a Marketing Digital", year: "2024" },
+  { name: "PEFC Certification", year: "2022" },
+  { name: "P&G Quality Training Program – 20 Critical Components", year: "2021" },
 ];
 
+export const officialCertifications: string[] = [];
+
 export const navLinks = [
-  { label: "Profile", href: "#profile" },
-  { label: "Experience", href: "#experience" },
-  { label: "Education", href: "#education" },
-  { label: "Projects", href: "#projects" },
-  { label: "Competencies", href: "#competencies" },
-  { label: "Contact", href: "#contact" },
+  { label: "Sobre Mí", href: "#about" },
+  { label: "Perfil", href: "#profile" },
+  { label: "Experiencia", href: "#experience" },
+  { label: "Educación", href: "#education" },
+  { label: "Proyectos", href: "#projects" },
+  { label: "Competencias", href: "#competencies" },
+  { label: "Contacto", href: "#contact" },
 ];

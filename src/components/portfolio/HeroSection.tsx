@@ -2,27 +2,24 @@ import { motion } from "framer-motion";
 import { Download, Linkedin } from "lucide-react";
 import { personalInfo } from "@/data/portfolio-data";
 import heroBg from "@/assets/hero-bg.jpg";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-primary/70" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        {/* Avatar placeholder */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="mx-auto mb-8 w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-accent/40 overflow-hidden bg-secondary flex items-center justify-center"
+          className="mx-auto mb-8 w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-accent/40 overflow-hidden"
         >
-          <span className="font-display text-4xl md:text-5xl font-bold text-foreground">
-            {personalInfo.name.split(" ").map(n => n[0]).join("")}
-          </span>
+          <img src={profilePhoto} alt="Pere Gumà" className="w-full h-full object-cover" />
         </motion.div>
 
         <motion.h1
@@ -65,7 +62,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-display font-semibold text-sm tracking-wide bg-accent text-accent-foreground hover:brightness-110 transition-all shadow-lg shadow-accent/20"
           >
             <Download size={18} />
-            Download CV
+            Descargar CV
           </a>
           <a
             href={personalInfo.linkedin}
@@ -79,7 +76,6 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

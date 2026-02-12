@@ -1,6 +1,6 @@
-import { GraduationCap, Award } from "lucide-react";
+import { GraduationCap, BookOpen } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import { education, certifications } from "@/data/portfolio-data";
+import { academicEducation, complementaryTraining } from "@/data/portfolio-data";
 
 const EducationSection = () => {
   return (
@@ -8,12 +8,13 @@ const EducationSection = () => {
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
-            Education
+            Educación
           </h2>
         </AnimatedSection>
 
+        {/* Educación Académica */}
         <div className="mt-12 grid md:grid-cols-2 gap-5">
-          {education.map((item, i) => (
+          {academicEducation.map((item, i) => (
             <AnimatedSection key={item.degree} delay={0.1 * i}>
               <div className="bg-card rounded-xl border border-border p-5 h-full flex gap-4">
                 <div className="mt-0.5 flex-shrink-0 w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center">
@@ -23,27 +24,26 @@ const EducationSection = () => {
                   <h3 className="font-display text-sm font-semibold text-foreground leading-snug">{item.degree}</h3>
                   <p className="text-xs text-accent font-medium mt-1">{item.institution}</p>
                   <p className="text-xs text-muted-foreground mt-0.5">{item.year}</p>
-                  <p className="text-xs text-muted-foreground mt-2 leading-relaxed line-clamp-3">{item.description}</p>
                 </div>
               </div>
             </AnimatedSection>
           ))}
         </div>
 
-        {/* Certifications */}
+        {/* Formación Complementaria */}
         <AnimatedSection delay={0.3}>
           <div className="mt-14">
             <h3 className="font-display text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
-              <Award size={20} className="text-accent" />
-              Certifications
+              <BookOpen size={20} className="text-accent" />
+              Formación Complementaria
             </h3>
             <div className="flex flex-wrap gap-3">
-              {certifications.map((cert) => (
+              {complementaryTraining.map((item) => (
                 <span
-                  key={cert}
+                  key={item.name}
                   className="text-sm font-medium px-4 py-2 rounded-lg bg-card border border-border text-foreground"
                 >
-                  {cert}
+                  {item.name} ({item.year})
                 </span>
               ))}
             </div>
