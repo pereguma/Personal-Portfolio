@@ -40,7 +40,7 @@ export const competencyCategories = [
   {
     title: "Analítica de Datos y Business Intelligence",
     skills: [
-      "Diseño de dashboards ejecutivos (Power BI / Looker)",
+      "Diseño de dashboards ejecutivos (Power BI / Looker Studio)",
       "Google Analytics 4 (GA4)",
       "Análisis de embudo y cohortes",
       "Modelado avanzado de datos (Excel / Sheets)",
@@ -51,7 +51,7 @@ export const competencyCategories = [
   {
     title: "IA Aplicada y Automatización Digital",
     skills: [
-      "Integración de LLMs (GPT / Claude / Gemini)",
+      "Integración de LLMs (ChatGPT / Claude / Gemini)",
       "Automatización no-code (Make / Zapier / n8n)",
       "Optimización de flujos con IA",
       "Workflows de contenido y datos con IA",
