@@ -107,24 +107,21 @@ export const experience = [
     location: "Abrera, Cataluña, España",
     period: "2023 – 2024",
     duration: "1 año",
-    description: null,
     highlights: [
       "Gestión integral de reclamaciones internacionales: análisis de causa raíz (8D), planes de acción y seguimiento de KPIs",
       "Coordinación con equipos multifuncionales (I+D, Producción, Comercial)",
       "Uso de SAP y reporting para trazabilidad y control de indicadores",
       "Mejora de fiabilidad mediante validaciones y controles preventivos",
     ],
-    isGrouped: false,
+    subRoles: undefined,
   },
   {
-    role: "BCNonwovens",
+    role: "",
     company: "BCNonwovens",
     location: "Sant Quintí de Mediona, Cataluña, España",
     period: "2019 – 2023",
     duration: "5 años",
-    description: null,
     highlights: [],
-    isGrouped: true,
     subRoles: [
       {
         role: "Quality Management Systems Engineer",

@@ -13,20 +13,20 @@ const ProfileSection = () => {
         </AnimatedSection>
 
         <AnimatedSection delay={0.2}>
-          <div className="mt-10 flex flex-col md:flex-row gap-8 items-start">
+          <div className="mt-10 flex flex-col items-center md:flex-row md:items-start gap-8">
+            <div className="flex-shrink-0">
+              <img
+                src={profilePhoto}
+                alt="Pere Gumà"
+                className="w-48 h-60 max-w-[250px] rounded-2xl object-cover border-2 border-border shadow-md"
+              />
+            </div>
             <div className="flex-1 space-y-6">
               {profileText.paragraphs.map((paragraph, i) => (
                 <p key={i} className="text-base md:text-lg leading-relaxed text-muted-foreground text-justify">
                   {paragraph}
                 </p>
               ))}
-            </div>
-            <div className="flex-shrink-0 hidden md:block">
-              <img
-                src={profilePhoto}
-                alt="Pere Gumà"
-                className="w-44 h-56 rounded-2xl object-cover border-2 border-border shadow-md"
-              />
             </div>
           </div>
         </AnimatedSection>
