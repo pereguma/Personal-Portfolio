@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { Download, Linkedin } from "lucide-react";
 import { personalInfo } from "@/data/portfolio-data";
+import { useTranslations } from "@/i18n/useTranslations";
 import heroBg from "@/assets/hero-bg.jpg";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const HeroSection = () => {
+  const t = useTranslations();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
@@ -61,7 +64,7 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-display font-semibold text-sm tracking-wide bg-accent text-accent-foreground hover:brightness-110 transition-all shadow-lg shadow-accent/20"
           >
             <Download size={18} />
-            Descargar CV
+            {t.hero.downloadCv}
           </a>
           <a
             href={personalInfo.linkedin}
