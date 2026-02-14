@@ -10,6 +10,8 @@ export const es = {
   },
   hero: {
     downloadCv: "Descargar CV",
+    title: "Consultoría en IA y Business Analytics | Analítica Aplicada al Marketing",
+    subtitle: "Transformando datos en decisiones estratégicas mediante analítica, automatización e implantación de soluciones de IA en entornos reales.",
   },
   about: {
     heading: "Quién Soy",

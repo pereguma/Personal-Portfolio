@@ -40,7 +40,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
           className="text-lg md:text-xl text-primary-foreground/70 mb-4 font-display font-light tracking-wide"
         >
-          {personalInfo.title}
+          {t.hero.title}
         </motion.p>
 
         <motion.p
@@ -49,7 +49,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, delay: 0.5 }}
           className="text-base md:text-lg text-primary-foreground/50 mb-10 max-w-2xl mx-auto"
         >
-          {personalInfo.subtitle}
+          {t.hero.subtitle}
         </motion.p>
 
         <motion.div
