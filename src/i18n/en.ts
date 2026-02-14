@@ -10,6 +10,8 @@ export const en = {
   },
   hero: {
     downloadCv: "Download CV",
+    title: "AI Consulting & Business Analytics | Applied Marketing Analytics",
+    subtitle: "Turning data into strategic decisions through analytics, automation, and real-world AI implementation.",
   },
   about: {
     heading: "About Me",
