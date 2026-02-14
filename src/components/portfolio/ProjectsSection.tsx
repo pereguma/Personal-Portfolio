@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ExternalLink, AlertTriangle } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import { projects } from "@/data/portfolio-data";
+import { useTranslations } from "@/i18n/useTranslations";
 import projectEcommerce from "@/assets/project-ecommerce.jpg";
 import projectStandardization from "@/assets/project-standardization.jpg";
 import projectTraining from "@/assets/project-training.jpg";
@@ -13,7 +13,11 @@ const projectImages: Record<string, string> = {
   "project-training": projectTraining,
 };
 
-const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
+const ProjectCard = ({ project, index, labels }: {
+  project: { title: string; subtitle: string; description: string; skills: string[]; image: string; details: string; link?: string; isPrototype: boolean };
+  index: number;
+  labels: { viewDetails: string; viewLess: string; visitProject: string; prototypeWarning: string };
+}) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -39,7 +43,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
             {project.isPrototype && (
               <div className="mt-3 flex items-center gap-2 text-xs text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/30 px-3 py-2 rounded-lg border border-amber-200 dark:border-amber-800">
                 <AlertTriangle size={14} />
-                <span>Actualmente es un prototipo. No se puede jugar ni realizar compras online.</span>
+                <span>{labels.prototypeWarning}</span>
               </div>
             )}
 
@@ -59,7 +63,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
                 onClick={() => setExpanded(!expanded)}
                 className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:brightness-110 transition-all"
               >
-                {expanded ? "Ver menos" : "Ver detalles"}
+                {expanded ? labels.viewLess : labels.viewDetails}
                 <motion.span animate={{ rotate: expanded ? 180 : 0 }} transition={{ duration: 0.3 }}>
                   <ChevronDown size={16} />
                 </motion.span>
@@ -72,7 +76,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:brightness-110 transition-all"
                 >
-                  Visitar proyecto
+                  {labels.visitProject}
                   <ExternalLink size={14} />
                 </a>
               )}
@@ -101,18 +105,30 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
 };
 
 const ProjectsSection = () => {
+  const t = useTranslations();
+
   return (
     <section id="projects" className="section-padding bg-background">
       <div className="max-w-5xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
-            Proyectos Seleccionados
+            {t.projects.heading}
           </h2>
         </AnimatedSection>
 
         <div className="mt-12 space-y-8">
-          {projects.map((project, i) => (
-            <ProjectCard key={project.title} project={project} index={i} />
+          {t.projects.entries.map((project, i) => (
+            <ProjectCard
+              key={project.title}
+              project={project}
+              index={i}
+              labels={{
+                viewDetails: t.projects.viewDetails,
+                viewLess: t.projects.viewLess,
+                visitProject: t.projects.visitProject,
+                prototypeWarning: t.projects.prototypeWarning,
+              }}
+            />
           ))}
         </div>
       </div>

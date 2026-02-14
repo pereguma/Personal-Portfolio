@@ -1,20 +1,21 @@
 import { GraduationCap, BookOpen } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import { academicEducation, complementaryTraining } from "@/data/portfolio-data";
+import { useTranslations } from "@/i18n/useTranslations";
 
 const EducationSection = () => {
+  const t = useTranslations();
+
   return (
     <section id="education" className="section-padding bg-background">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
-            Educación
+            {t.education.heading}
           </h2>
         </AnimatedSection>
 
-        {/* Educación Académica */}
         <div className="mt-12 grid md:grid-cols-2 gap-5">
-          {academicEducation.map((item, i) => (
+          {t.education.academic.map((item, i) => (
             <AnimatedSection key={item.degree} delay={0.1 * i}>
               <div className="bg-card rounded-xl border border-border p-5 h-full flex gap-4">
                 <div className="mt-0.5 flex-shrink-0 w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center">
@@ -30,15 +31,14 @@ const EducationSection = () => {
           ))}
         </div>
 
-        {/* Formación Complementaria */}
         <AnimatedSection delay={0.3}>
           <div className="mt-14">
             <h3 className="font-display text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
               <BookOpen size={20} className="text-accent" />
-              Formación Complementaria
+              {t.education.complementaryHeading}
             </h3>
             <div className="flex flex-wrap gap-3">
-              {complementaryTraining.map((item) => (
+              {t.education.complementary.map((item) => (
                 <span
                   key={item.name}
                   className="text-sm font-medium px-4 py-2 rounded-lg bg-card border border-border text-foreground"

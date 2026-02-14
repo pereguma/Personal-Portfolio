@@ -1,17 +1,32 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "@/data/portfolio-data";
+import { useLanguage, Locale } from "@/i18n/LanguageContext";
+import { useTranslations } from "@/i18n/useTranslations";
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { locale, setLocale } = useLanguage();
+  const t = useTranslations();
+
+  const navLinks = [
+    { label: t.nav.about, href: "#about" },
+    { label: t.nav.profile, href: "#profile" },
+    { label: t.nav.experience, href: "#experience" },
+    { label: t.nav.education, href: "#education" },
+    { label: t.nav.projects, href: "#projects" },
+    { label: t.nav.competencies, href: "#competencies" },
+    { label: t.nav.contact, href: "#contact" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const toggleLocale = (l: Locale) => setLocale(l);
 
   return (
     <motion.nav
@@ -35,29 +50,81 @@ const Navigation = () => {
         </a>
 
         {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
-                  scrolled ? "text-muted-foreground" : "text-primary-foreground/80"
-                }`}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex items-center gap-8">
+          <ul className="flex items-center gap-8">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={`text-sm font-medium transition-colors hover:text-accent ${
+                    scrolled ? "text-muted-foreground" : "text-primary-foreground/80"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className={`md:hidden p-2 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <X size={22} /> : <Menu size={22} />}
-        </button>
+          {/* Language toggle */}
+          <div className={`flex items-center gap-1 text-xs font-semibold ${
+            scrolled ? "text-muted-foreground" : "text-primary-foreground/70"
+          }`}>
+            <button
+              onClick={() => toggleLocale("es")}
+              className={`px-2 py-1 rounded transition-colors ${
+                locale === "es"
+                  ? "bg-accent text-accent-foreground"
+                  : "hover:text-accent"
+              }`}
+            >
+              ES
+            </button>
+            <span className="opacity-40">|</span>
+            <button
+              onClick={() => toggleLocale("en")}
+              className={`px-2 py-1 rounded transition-colors ${
+                locale === "en"
+                  ? "bg-accent text-accent-foreground"
+                  : "hover:text-accent"
+              }`}
+            >
+              EN
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile: lang toggle + hamburger */}
+        <div className="md:hidden flex items-center gap-3">
+          <div className={`flex items-center gap-1 text-xs font-semibold ${
+            scrolled ? "text-muted-foreground" : "text-primary-foreground/70"
+          }`}>
+            <button
+              onClick={() => toggleLocale("es")}
+              className={`px-2 py-1 rounded transition-colors ${
+                locale === "es" ? "bg-accent text-accent-foreground" : "hover:text-accent"
+              }`}
+            >
+              ES
+            </button>
+            <span className="opacity-40">|</span>
+            <button
+              onClick={() => toggleLocale("en")}
+              className={`px-2 py-1 rounded transition-colors ${
+                locale === "en" ? "bg-accent text-accent-foreground" : "hover:text-accent"
+              }`}
+            >
+              EN
+            </button>
+          </div>
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className={`p-2 ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}

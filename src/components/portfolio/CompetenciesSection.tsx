@@ -1,20 +1,22 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import { competencyCategories } from "@/data/portfolio-data";
+import { useTranslations } from "@/i18n/useTranslations";
 
 const CompetenciesSection = () => {
+  const t = useTranslations();
+
   return (
     <section id="competencies" className="section-padding section-alt">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
-            Competencias Clave
+            {t.competencies.heading}
           </h2>
         </AnimatedSection>
 
         <div className="mt-12 grid md:grid-cols-3 gap-6 lg:gap-8">
-          {competencyCategories.map((category, ci) => (
+          {t.competencies.categories.map((category, ci) => (
             <AnimatedSection key={category.title} delay={0.15 * ci}>
               <div className="bg-card rounded-xl p-6 lg:p-8 shadow-sm border border-border h-full">
                 <div className="flex items-center gap-3 mb-6">

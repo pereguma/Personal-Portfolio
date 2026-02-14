@@ -1,17 +1,20 @@
 import { Linkedin, Mail, Download } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { personalInfo } from "@/data/portfolio-data";
+import { useTranslations } from "@/i18n/useTranslations";
 
 const ContactSection = () => {
+  const t = useTranslations();
+
   return (
     <section id="contact" className="section-padding bg-background">
       <div className="max-w-3xl mx-auto text-center">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Conectemos
+            {t.contact.heading}
           </h2>
           <p className="text-muted-foreground mb-10">
-            ¿Interesado en colaborar o tienes un proyecto en mente? Me encantaría saber de ti.
+            {t.contact.subtitle}
           </p>
         </AnimatedSection>
 
@@ -39,14 +42,14 @@ const ContactSection = () => {
               className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-display font-semibold text-sm border border-border text-foreground hover:bg-secondary transition-all"
             >
               <Download size={18} />
-              Descargar CV
+              {t.contact.downloadCv}
             </a>
           </div>
         </AnimatedSection>
 
         <AnimatedSection delay={0.4}>
           <p className="mt-16 text-sm text-muted-foreground">
-            © {new Date().getFullYear()} {personalInfo.name}. Todos los derechos reservados.
+            © {new Date().getFullYear()} {personalInfo.name}. {t.contact.rights}
           </p>
         </AnimatedSection>
       </div>

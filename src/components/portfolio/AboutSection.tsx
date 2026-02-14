@@ -1,14 +1,16 @@
 import AnimatedSection from "./AnimatedSection";
-import { aboutText } from "@/data/portfolio-data";
+import { useTranslations } from "@/i18n/useTranslations";
 import runningPhoto from "@/assets/running.jpg";
 
 const AboutSection = () => {
+  const t = useTranslations();
+
   return (
     <section id="about" className="section-padding bg-background">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
-            {aboutText.heading}
+            {t.about.heading}
           </h2>
         </AnimatedSection>
 
@@ -22,7 +24,7 @@ const AboutSection = () => {
               />
             </div>
             <p className="text-base md:text-lg leading-relaxed text-muted-foreground text-justify">
-              {aboutText.paragraph}
+              {t.about.paragraph}
             </p>
           </div>
         </AnimatedSection>

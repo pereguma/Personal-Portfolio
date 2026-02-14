@@ -1,14 +1,16 @@
 import { Briefcase, MapPin } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
-import { experience } from "@/data/portfolio-data";
+import { useTranslations } from "@/i18n/useTranslations";
 
 const ExperienceSection = () => {
+  const t = useTranslations();
+
   return (
     <section id="experience" className="section-padding section-alt">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 gold-underline pb-3">
-            Experiencia Profesional
+            {t.experience.heading}
           </h2>
         </AnimatedSection>
 
@@ -16,7 +18,7 @@ const ExperienceSection = () => {
           <div className="absolute left-[19px] top-2 bottom-2 w-px bg-border md:left-[19px]" />
 
           <div className="space-y-10">
-            {experience.map((item, i) => (
+            {t.experience.entries.map((item, i) => (
               <AnimatedSection key={`${item.company}-${i}`} delay={0.1 * i}>
                 <div className="flex gap-5">
                   <div className="relative flex-shrink-0">
@@ -26,7 +28,6 @@ const ExperienceSection = () => {
                   </div>
 
                   <div className="flex-1 pb-2">
-                    {/* Company as main title — always */}
                     <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
                       <h3 className="font-display text-lg font-semibold text-foreground">{item.company}</h3>
                       <span className="text-xs text-muted-foreground font-medium whitespace-nowrap">{item.duration}</span>
@@ -37,9 +38,8 @@ const ExperienceSection = () => {
                     </div>
                     <p className="text-xs text-muted-foreground mt-0.5">{item.period}</p>
 
-                    {/* Roles underneath */}
                     <div className="mt-5 space-y-6 border-l-2 border-accent/20 ml-1 pl-5">
-                      {(item.subRoles ?? [{ role: item.role, period: item.period, highlights: item.highlights }]).map((sub) => (
+                      {item.subRoles.map((sub) => (
                         <div key={sub.role}>
                           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
                             <h4 className="font-display text-base font-semibold text-foreground">{sub.role}</h4>
