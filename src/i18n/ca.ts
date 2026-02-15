@@ -14,9 +14,9 @@ export const ca = {
     subtitle: "Transformant dades en decisions estratègiques mitjançant analítica, automatització i implantació de solucions d'IA en entorns reals.",
   },
   about: {
-    heading: "Qui Sóc",
+    heading: "Qui sóc?",
     paragraph:
-      "Sóc una persona orientada a la millora contínua, tant en l'àmbit professional com personal. Practico esport de forma habitual (running, gimnàs, futbol, escalada), cosa que reforça la meva disciplina, constància i mentalitat de superació. Em motiva sortir de la zona de confort, aprendre constantment i afrontar reptes complexos amb enfocament analític i actitud proactiva. Busco sempre aportar valor real i evolucionar cap a la meva millor versió en cada projecte.",
+      "Sóc una persona orientada a la millora contínua, tant en l'àmbit professional com personal. Practico esport de forma habitual (running, gimnàs, futbol i escalada, entre d'altres), cosa que reforça la meva disciplina, constància i mentalitat de superació. Em motiva sortir de la zona de confort, aprendre constantment i afrontar reptes complexos amb enfocament analític i actitud proactiva. Busco sempre aportar valor real i evolucionar cap a la meva millor versió en cada projecte.",
   },
   profile: {
     heading: "Perfil Professional",

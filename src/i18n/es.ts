@@ -14,9 +14,9 @@ export const es = {
     subtitle: "Transformando datos en decisiones estratégicas mediante analítica, automatización e implantación de soluciones de IA en entornos reales.",
   },
   about: {
-    heading: "Quién Soy",
+    heading: "¿Quién soy?",
     paragraph:
-      "Soy una persona orientada a la mejora continua, tanto en el ámbito profesional como personal. Practico deporte de forma habitual (running, gimnasio, fútbol, escalada), lo que refuerza mi disciplina, constancia y mentalidad de superación. Me motiva salir de la zona de confort, aprender constantemente y afrontar retos complejos con enfoque analítico y actitud proactiva. Busco siempre aportar valor real y evolucionar hacia mi mejor versión en cada proyecto.",
+      "Soy una persona orientada a la mejora continua, tanto en el ámbito profesional como personal. Practico deporte de forma habitual (running, gimnasio, fútbol y escalada, entre otros), lo que refuerza mi disciplina, constancia y mentalidad de superación. Me motiva salir de la zona de confort, aprender constantemente y afrontar retos complejos con enfoque analítico y actitud proactiva. Busco siempre aportar valor real y evolucionar hacia mi mejor versión en cada proyecto.",
   },
   profile: {
     heading: "Perfil Profesional",
