@@ -14,9 +14,9 @@ export const en = {
     subtitle: "Turning data into strategic decisions through analytics, automation, and real-world AI implementation.",
   },
   about: {
-    heading: "About Me",
+    heading: "Who am I?",
     paragraph:
-      "I am a person driven by continuous improvement, both professionally and personally. I regularly practice sports (running, gym, football, climbing), which reinforces my discipline, consistency, and growth mindset. I am motivated by stepping out of my comfort zone, constantly learning, and tackling complex challenges with an analytical approach and proactive attitude. I always strive to deliver real value and evolve towards my best version in every project.",
+      "I am a person driven by continuous improvement, both professionally and personally. I regularly practice sports (running, gym, football and climbing, among others), which reinforces my discipline, consistency, and growth mindset. I am motivated by stepping out of my comfort zone, constantly learning, and tackling complex challenges with an analytical approach and proactive attitude. I always strive to deliver real value and evolve towards my best version in every project.",
   },
   profile: {
     heading: "Professional Profile",
