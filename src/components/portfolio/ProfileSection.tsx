@@ -19,7 +19,7 @@ const ProfileSection = () => {
             <div className="flex-shrink-0 w-full max-w-[250px]">
               <img
                 src={profilePhoto}
-                alt="Pere Gumà"
+                alt="Pere Gumà Esteve"
                 className="w-full h-60 rounded-2xl object-cover border-2 border-border shadow-md"
               />
             </div>

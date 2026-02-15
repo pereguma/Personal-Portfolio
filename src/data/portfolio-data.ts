@@ -3,7 +3,7 @@
 // =====================================================
 
 export const personalInfo = {
-  name: "Pere Gumà",
+  name: "Pere Gumà Esteve",
   title: "Consultoría en IA y Business Analytics | Analítica Aplicada al Marketing",
   subtitle: "Transformando datos en decisiones estratégicas mediante analítica, automatización e implantación de soluciones de IA en entornos reales.",
   email: "pere.guma97@gmail.com",

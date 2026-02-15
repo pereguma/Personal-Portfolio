@@ -19,7 +19,7 @@ const AboutSection = () => {
             <div className="flex-shrink-0">
               <img
                 src={runningPhoto}
-                alt="Pere Gumà corriendo"
+                alt="Pere Gumà Esteve corriendo"
                 className="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover border-2 border-border shadow-md"
               />
             </div>

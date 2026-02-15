@@ -22,7 +22,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mb-8 w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-accent/40 overflow-hidden"
         >
-          <img src={profilePhoto} alt="Pere Gumà" className="w-full h-full object-cover" />
+          <img src={profilePhoto} alt="Pere Gumà Esteve" className="w-full h-full object-cover" />
         </motion.div>
 
         <motion.h1
