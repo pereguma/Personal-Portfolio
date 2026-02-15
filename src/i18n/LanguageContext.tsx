@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
-export type Locale = "es" | "en";
+export type Locale = "es" | "en" | "ca";
 
 interface LanguageContextType {
   locale: Locale;

@@ -70,27 +70,19 @@ const Navigation = () => {
           <div className={`flex items-center gap-1 text-xs font-semibold ${
             scrolled ? "text-muted-foreground" : "text-primary-foreground/70"
           }`}>
-            <button
-              onClick={() => toggleLocale("es")}
-              className={`px-2 py-1 rounded transition-colors ${
-                locale === "es"
-                  ? "bg-accent text-accent-foreground"
-                  : "hover:text-accent"
-              }`}
-            >
-              ES
-            </button>
-            <span className="opacity-40">|</span>
-            <button
-              onClick={() => toggleLocale("en")}
-              className={`px-2 py-1 rounded transition-colors ${
-                locale === "en"
-                  ? "bg-accent text-accent-foreground"
-                  : "hover:text-accent"
-              }`}
-            >
-              EN
-            </button>
+            {(["es", "en", "ca"] as Locale[]).map((l, i) => (
+              <span key={l} className="flex items-center">
+                {i > 0 && <span className="opacity-40 mx-0.5">|</span>}
+                <button
+                  onClick={() => toggleLocale(l)}
+                  className={`px-2 py-1 rounded transition-colors ${
+                    locale === l ? "bg-accent text-accent-foreground" : "hover:text-accent"
+                  }`}
+                >
+                  {l.toUpperCase()}
+                </button>
+              </span>
+            ))}
           </div>
         </div>
 
@@ -99,23 +91,19 @@ const Navigation = () => {
           <div className={`flex items-center gap-1 text-xs font-semibold ${
             scrolled ? "text-muted-foreground" : "text-primary-foreground/70"
           }`}>
-            <button
-              onClick={() => toggleLocale("es")}
-              className={`px-2 py-1 rounded transition-colors ${
-                locale === "es" ? "bg-accent text-accent-foreground" : "hover:text-accent"
-              }`}
-            >
-              ES
-            </button>
-            <span className="opacity-40">|</span>
-            <button
-              onClick={() => toggleLocale("en")}
-              className={`px-2 py-1 rounded transition-colors ${
-                locale === "en" ? "bg-accent text-accent-foreground" : "hover:text-accent"
-              }`}
-            >
-              EN
-            </button>
+            {(["es", "en", "ca"] as Locale[]).map((l, i) => (
+              <span key={l} className="flex items-center">
+                {i > 0 && <span className="opacity-40 mx-0.5">|</span>}
+                <button
+                  onClick={() => toggleLocale(l)}
+                  className={`px-2 py-1 rounded transition-colors ${
+                    locale === l ? "bg-accent text-accent-foreground" : "hover:text-accent"
+                  }`}
+                >
+                  {l.toUpperCase()}
+                </button>
+              </span>
+            ))}
           </div>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
