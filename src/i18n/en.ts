@@ -105,6 +105,8 @@ export const en = {
       },
     ],
     complementary: [
+      { name: "Python Programming Fundamentals", year: "2026" },
+      { name: "Microsoft Azure Administrator Associate Certification", year: "2026" },
       { name: "AWS Cloud Practitioner Essentials", year: "2026" },
       { name: "SEO, SEM & Web Analytics", year: "2025" },
       { name: "AI Applied to Digital Marketing", year: "2024" },
