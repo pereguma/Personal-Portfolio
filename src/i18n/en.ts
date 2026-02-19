@@ -23,6 +23,7 @@ export const en = {
     paragraphs: [
       "Hybrid business–technology professional with a background in Industrial Engineering and Business Administration, specialising in data analytics and digital marketing. Experience in KPI definition and tracking, process improvement, and reporting for decision-making.",
       "Focused on turning data into actionable insights through analytics, automation, and BI tools, with a hands-on approach in business and consulting environments.",
+      "Over the past two years, alongside formal academic training, I have pursued intensive self-directed learning in applied Artificial Intelligence: LLM integration, AI-driven content generation (video and image), intelligent automation, vibecoding, and the implementation of AI-driven solutions with a clear business orientation. The focus has consistently been on practical application in real-world environments, combining strategic thinking with a results-driven approach.",
     ],
   },
   experience: {
@@ -119,8 +120,22 @@ export const en = {
     viewDetails: "View details",
     viewLess: "View less",
     visitProject: "Visit project",
+    viewOnGithub: "View on GitHub",
     prototypeWarning: "Currently a prototype. Online purchases and gameplay are not available.",
     entries: [
+      {
+        title: "Ecommerce Strategic Segmentation & Predictive Analysis",
+        subtitle: "Data Science Project",
+        description:
+          "Strategic analysis on a 10,000-record e-commerce dataset. ANOVA testing was used to validate statistically significant differences in average order value across customer segments, complemented by unsupervised clustering (K-Means) for strategic segmentation and a Random Forest model for predictive analysis, within a full exploratory data analysis and preparation pipeline.",
+        skills: ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],
+        image: "project-datascience",
+        details:
+          "The project integrates inferential statistics and machine learning to extract actionable value from transactional data. ANOVA validation confirmed statistically significant differences between customer segments. K-Means clustering identified strategic value profiles, while the Random Forest model provided predictive capability to anticipate purchasing behaviour. The full pipeline includes rigorous exploratory analysis, outlier treatment, feature engineering, and interpretive visualisation of results.",
+        link: "https://github.com/pereguma/Ecommerce-Analysis-Dataset",
+        isPrototype: false,
+        isGithub: true,
+      },
       {
         title: "Jocs de la Terra – Cultural E-commerce Project",
         subtitle: "Personal project",
@@ -132,6 +147,7 @@ export const en = {
           "Development and execution of a comprehensive digital transformation strategy: website redesign, SEO optimisation, paid advertising campaigns, and advanced analytics implementation. Use of GA4 and AI-driven insights to optimise the customer journey and increase conversion rates.",
         link: "https://jocsdelaterra.cat",
         isPrototype: true,
+        isGithub: false,
       },
       {
         title: "Process Standardisation System",
@@ -144,6 +160,7 @@ export const en = {
           "Creation of the complete organisational process architecture from scratch, documenting each process at two levels: a visual macro view for quick reference and detailed standard operating procedures at the textual level for each individual process. This SKELETON framework became the backbone for quality audits, training, and continuous improvement across the organisation.",
         link: undefined,
         isPrototype: false,
+        isGithub: false,
       },
       {
         title: "Training and Competency System",
@@ -156,6 +173,7 @@ export const en = {
           "Design and deployment of the complete training system framework: not the software, but the organisational implementation. This included defining competency matrices by position, qualification levels per employee, identifying training gaps, and creating structured development plans. The system enabled data-driven workforce development aligned with P&G quality requirements.",
         link: undefined,
         isPrototype: false,
+        isGithub: false,
       },
     ],
   },

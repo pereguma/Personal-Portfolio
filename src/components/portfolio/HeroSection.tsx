@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Download, Linkedin } from "lucide-react";
+import { Download, Linkedin, Github } from "lucide-react";
 import { personalInfo } from "@/data/portfolio-data";
 import { useTranslations } from "@/i18n/useTranslations";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -74,6 +74,15 @@ const HeroSection = () => {
           >
             <Linkedin size={18} />
             LinkedIn
+          </a>
+          <a
+            href={personalInfo.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-display font-semibold text-sm tracking-wide border border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:border-primary-foreground/50 transition-all"
+          >
+            <Github size={18} />
+            GitHub
           </a>
         </motion.div>
       </div>

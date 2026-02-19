@@ -23,6 +23,7 @@ export const es = {
     paragraphs: [
       "Profesional híbrido negocio–tecnología con formación en Ingeniería de Organización Industrial y ADE, y especialización en analítica de datos y marketing digital. Experiencia en definición y seguimiento de KPIs, mejora de procesos y reporting para la toma de decisiones.",
       "Orientado a convertir datos en insights accionables mediante analítica, automatización y herramientas BI, con enfoque práctico en entornos de negocio y consultoría.",
+      "Durante los últimos dos años, en paralelo a la formación académica formal, he desarrollado una formación autodidacta intensiva en Inteligencia Artificial aplicada: integración de LLMs, generación de contenido con IA (vídeo e imagen), automatizaciones inteligentes, vibecoding e implementación de soluciones AI-driven orientadas a negocio. El enfoque ha sido siempre la aplicación práctica en entornos reales, con criterio estratégico y orientación a resultados.",
     ],
   },
   experience: {
@@ -119,8 +120,22 @@ export const es = {
     viewDetails: "Ver detalles",
     viewLess: "Ver menos",
     visitProject: "Visitar proyecto",
+    viewOnGithub: "Ver en GitHub",
     prototypeWarning: "Actualmente es un prototipo. No se puede jugar ni realizar compras online.",
     entries: [
+      {
+        title: "Ecommerce Strategic Segmentation & Predictive Analysis",
+        subtitle: "Proyecto de Data Science",
+        description:
+          "Análisis estratégico sobre un dataset de 10.000 registros de un e-commerce. Se validaron diferencias significativas en el ticket medio entre segmentos mediante test ANOVA, y se aplicó Machine Learning para segmentación no supervisada (K-Means) y modelado predictivo (Random Forest), con un pipeline completo de análisis exploratorio y preparación de datos.",
+        skills: ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],
+        image: "project-datascience",
+        details:
+          "El proyecto integra estadística inferencial y machine learning para extraer valor accionable de datos transaccionales. La validación ANOVA confirmó diferencias estadísticamente significativas entre segmentos de clientes. El clustering K-Means permitió identificar perfiles estratégicos de valor, mientras que el modelo Random Forest ofreció capacidad predictiva para anticipar comportamientos de compra. Todo el proceso incluye análisis exploratorio riguroso, tratamiento de outliers, feature engineering y visualización interpretativa de resultados.",
+        link: "https://github.com/pereguma/Ecommerce-Analysis-Dataset",
+        isPrototype: false,
+        isGithub: true,
+      },
       {
         title: "Jocs de la Terra – Proyecto E-commerce Cultural",
         subtitle: "Proyecto propio",
@@ -132,6 +147,7 @@ export const es = {
           "Desarrollo y ejecución de una estrategia de transformación digital integral: rediseño web, optimización SEO, campañas de publicidad pagada e implementación de analítica avanzada. Uso de GA4 e insights basados en IA para optimizar el customer journey y aumentar las tasas de conversión.",
         link: "https://jocsdelaterra.cat",
         isPrototype: true,
+        isGithub: false,
       },
       {
         title: "Sistema de Estandarización de Procesos",
@@ -144,6 +160,7 @@ export const es = {
           "Creación de la arquitectura completa de procesos organizacionales desde cero, documentando cada proceso a dos niveles: una vista macro visual para referencia rápida y procedimientos operativos estándar detallados a nivel textual para cada proceso individual. Este marco SKELETON se convirtió en la columna vertebral para auditorías de calidad, formación y mejora continua en toda la organización.",
         link: undefined,
         isPrototype: false,
+        isGithub: false,
       },
       {
         title: "Sistema Formativo y de Competencias",
@@ -156,6 +173,7 @@ export const es = {
           "Diseño y despliegue del marco completo del sistema formativo: no el software, sino la implementación organizacional. Esto incluyó la definición de matrices de competencias por puesto, niveles de cualificación por empleado, identificación de gaps formativos y creación de planes de desarrollo estructurados. El sistema permitió un desarrollo de la plantilla basado en datos, alineado con los requisitos de calidad de P&G.",
         link: undefined,
         isPrototype: false,
+        isGithub: false,
       },
     ],
   },

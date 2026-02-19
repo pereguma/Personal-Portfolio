@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Download } from "lucide-react";
+import { Linkedin, Mail, Download, Github } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { personalInfo } from "@/data/portfolio-data";
 import { useTranslations } from "@/i18n/useTranslations";
@@ -28,6 +28,15 @@ const ContactSection = () => {
             >
               <Linkedin size={18} />
               LinkedIn
+            </a>
+            <a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-lg font-display font-semibold text-sm border border-border text-foreground hover:bg-secondary hover:border-foreground/30 transition-all"
+            >
+              <Github size={18} />
+              GitHub
             </a>
             <a
               href={`mailto:${personalInfo.email}`}
