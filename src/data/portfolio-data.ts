@@ -8,6 +8,7 @@ export const personalInfo = {
   subtitle: "Transformando datos en decisiones estratégicas mediante analítica, automatización e implantación de soluciones de IA en entornos reales.",
   email: "pere.guma97@gmail.com",
   linkedin: "https://www.linkedin.com/in/peregum%C3%A0esteve",
+  github: "https://github.com/pereguma",
   cvUrl: "/cv-pere-guma.pdf",
 };
 
