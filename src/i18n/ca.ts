@@ -126,6 +126,7 @@ export const ca = {
       {
         title: "Ecommerce Strategic Segmentation & Predictive Analysis",
         subtitle: "Projecte de Data Science",
+        year: "2025",
         description:
           "Anàlisi estratègica sobre un dataset de 10.000 registres d'un e-commerce. Es van validar diferències significatives en el tiquet mitjà entre segments mitjançant test ANOVA, i s'hi va aplicar Machine Learning per a segmentació no supervisada (K-Means) i modelatge predictiu (Random Forest), amb un pipeline complet d'anàlisi exploratòria i preparació de dades.",
         skills: ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],
@@ -139,6 +140,7 @@ export const ca = {
       {
         title: "Jocs de la Terra – Projecte E-commerce Cultural",
         subtitle: "Projecte propi",
+        year: "2025",
         description:
           "Projecte propi d'e-commerce orientat a la divulgació de la cultura catalana a través de jocs de taula temàtics. Desenvolupament de proposta de valor, enfocament SEO/SEM, analítica de funnels i exploració d'automatitzacions.",
         skills: ["Estratègia E-commerce", "Màrqueting Digital", "GA4", "SEO/SEM"],
@@ -152,6 +154,7 @@ export const ca = {
       {
         title: "Sistema d'Estandardització de Processos",
         subtitle: "BCNonwovens",
+        year: "2022",
         description:
           "Vaig dissenyar i implementar un marc complet d'estandardització de processos (\"SKELETON\") mapejant tots els processos de l'empresa, amb documentació visual a nivell macro i descripcions detallades per a cada flux operatiu.",
         skills: ["Mapatge de processos", "Estandardització", "Metodologia Lean", "Sistemes de qualitat"],
@@ -165,6 +168,7 @@ export const ca = {
       {
         title: "Sistema Formatiu i de Competències",
         subtitle: "BCNonwovens",
+        year: "2021",
         description:
           "Vaig implementar un sistema integral de gestió formativa, mapejant les competències requerides de cada lloc de treball i el nivell de qualificació de cada persona a l'organització.",
         skills: ["Sistemes formatius", "Mapatge de competències", "Processos RRHH", "Seguiment de qualificacions"],
