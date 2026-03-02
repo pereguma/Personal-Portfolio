@@ -126,6 +126,7 @@ export const es = {
       {
         title: "Ecommerce Strategic Segmentation & Predictive Analysis",
         subtitle: "Proyecto de Data Science",
+        year: "2025",
         description:
           "Análisis estratégico sobre un dataset de 10.000 registros de un e-commerce. Se validaron diferencias significativas en el ticket medio entre segmentos mediante test ANOVA, y se aplicó Machine Learning para segmentación no supervisada (K-Means) y modelado predictivo (Random Forest), con un pipeline completo de análisis exploratorio y preparación de datos.",
         skills: ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],
@@ -139,6 +140,7 @@ export const es = {
       {
         title: "Jocs de la Terra – Proyecto E-commerce Cultural",
         subtitle: "Proyecto propio",
+        year: "2025",
         description:
           "Proyecto propio de e-commerce orientado a la divulgación de la cultura catalana a través de juegos de mesa temáticos. Desarrollo de propuesta de valor, enfoque SEO/SEM, analítica de funnels y exploración de automatizaciones.",
         skills: ["Estrategia E-commerce", "Marketing Digital", "GA4", "SEO/SEM"],
@@ -152,6 +154,7 @@ export const es = {
       {
         title: "Sistema de Estandarización de Procesos",
         subtitle: "BCNonwovens",
+        year: "2022",
         description:
           "Diseñé e implementé un marco completo de estandarización de procesos (\"SKELETON\") mapeando todos los procesos de la empresa, con documentación visual a nivel macro y descripciones detalladas para cada flujo operativo.",
         skills: ["Mapeo de procesos", "Estandarización", "Metodología Lean", "Sistemas de calidad"],
@@ -165,6 +168,7 @@ export const es = {
       {
         title: "Sistema Formativo y de Competencias",
         subtitle: "BCNonwovens",
+        year: "2021",
         description:
           "Implementé un sistema integral de gestión formativa, mapeando las competencias requeridas de cada puesto de trabajo y el nivel de cualificación de cada persona en la organización.",
         skills: ["Sistemas formativos", "Mapeo de competencias", "Procesos RRHH", "Seguimiento de cualificaciones"],

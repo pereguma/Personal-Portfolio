@@ -126,6 +126,7 @@ export const en = {
       {
         title: "Ecommerce Strategic Segmentation & Predictive Analysis",
         subtitle: "Data Science Project",
+        year: "2025",
         description:
           "Strategic analysis on a 10,000-record e-commerce dataset. ANOVA testing was used to validate statistically significant differences in average order value across customer segments, complemented by unsupervised clustering (K-Means) for strategic segmentation and a Random Forest model for predictive analysis, within a full exploratory data analysis and preparation pipeline.",
         skills: ["Python", "Scikit-Learn", "Pandas", "Matplotlib"],
@@ -139,6 +140,7 @@ export const en = {
       {
         title: "Jocs de la Terra – Cultural E-commerce Project",
         subtitle: "Personal project",
+        year: "2025",
         description:
           "Personal e-commerce project aimed at promoting Catalan culture through themed board games. Development of value proposition, SEO/SEM approach, funnel analytics, and automation exploration.",
         skills: ["E-commerce Strategy", "Digital Marketing", "GA4", "SEO/SEM"],
@@ -152,6 +154,7 @@ export const en = {
       {
         title: "Process Standardisation System",
         subtitle: "BCNonwovens",
+        year: "2022",
         description:
           "Designed and implemented a comprehensive process standardisation framework (\"SKELETON\") mapping all company processes, with visual macro-level documentation and detailed descriptions for each operational flow.",
         skills: ["Process Mapping", "Standardisation", "Lean Methodology", "Quality Systems"],
@@ -165,6 +168,7 @@ export const en = {
       {
         title: "Training and Competency System",
         subtitle: "BCNonwovens",
+        year: "2021",
         description:
           "Implemented a comprehensive training management system, mapping the competencies required for each job position and the qualification level of each person in the organisation.",
         skills: ["Training Systems", "Competency Mapping", "HR Processes", "Qualification Tracking"],

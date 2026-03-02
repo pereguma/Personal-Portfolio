@@ -29,7 +29,7 @@ const DataSciencePlaceholder = () => (
 );
 
 const ProjectCard = ({ project, index, labels }: {
-  project: { title: string; subtitle: string; description: string; skills: string[]; image: string; details: string; link?: string; isPrototype: boolean; isGithub?: boolean };
+  project: { title: string; subtitle: string; year?: string; description: string; skills: string[]; image: string; details: string; link?: string; isPrototype: boolean; isGithub?: boolean };
   index: number;
   labels: { viewDetails: string; viewLess: string; visitProject: string; prototypeWarning: string; viewOnGithub: string };
 }) => {
@@ -54,9 +54,16 @@ const ProjectCard = ({ project, index, labels }: {
             )}
           </div>
           <div className="md:w-3/5 p-6 md:p-8">
-            <h3 className="font-display text-xl md:text-2xl font-bold text-foreground">
-              {project.title}
-            </h3>
+            <div className="flex items-start justify-between gap-3">
+              <h3 className="font-display text-xl md:text-2xl font-bold text-foreground">
+                {project.title}
+              </h3>
+              {project.year && (
+                <span className="shrink-0 text-xs font-medium text-muted-foreground bg-secondary px-2.5 py-1 rounded-full mt-1">
+                  {project.year}
+                </span>
+              )}
+            </div>
             <p className="text-sm text-accent font-medium mt-1">{project.subtitle}</p>
 
             <p className="text-muted-foreground mt-4 text-sm leading-relaxed text-justify">{project.description}</p>
